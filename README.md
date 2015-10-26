@@ -1,10 +1,12 @@
 # ui-component-example
 
-Created with [generator-ui-component v0.1.0](https://github.com/fknussel/generator-ui-component).
+This is a simple ui-component consisting just of a button that changes its background color randomly as it gets clicked on. This demo module was created to illustrate how ui-components work and get integrated to bigger projects.
+
+> Created with [generator-ui-component](https://github.com/fknussel/generator-ui-component) v0.1.0.
 
 ## Prerequisites
 
-1. Setup npm properly for your development environment.
+1. Setup [npm](https://nodejs.org/) properly for your development environment.
 2. Run `npm install -g grunt-cli` to to install Grunt's command line interface (CLI) globally.
 
 ## Setup
@@ -13,31 +15,29 @@ Created with [generator-ui-component v0.1.0](https://github.com/fknussel/generat
 npm install
 ```
 
-## Run Tests
+## Run tests
 
 ```
 grunt test
 ```
 
-or
+## Build assets
 
 ```
-npm test
+grunt build
 ```
 
-## Build and Run
+## Build, run and watch for changes
 
 ```
 grunt
 ```
 
-Open browser to [http://localhost:4567](http://localhost:4567/).
-
 ## Creating your module
 
-1. Edit mustache, SASS, JS files in `./src` (e.g. `./src/<%= componentName %>.mustache`, `./src/<%= componentName %>.scss`, and `./src/<%= componentName %>.js`).
+1. Edit mustache, SASS, JS files in `./src` (e.g. `./src/component.mustache`, `./src/component.scss`, and `./src/component.js`).
 2. Add mock JSON data model to `./model/viewmodel.json`.
-4. Build and run the app, and visit [http://localhost:6789](http://localhost:6789) in your browser.
+4. Build and run the app, and visit [http://localhost:4567](http://localhost:4567) in your browser.
 
 ## Module documentation
 
@@ -66,8 +66,6 @@ Publish the package to [npm's public registry](https://www.npmjs.com/):
 npm publish
 ```
 
-To make sure everything worked just fine, go to [http://npmjs.com/package/generator-ui-component](http://npmjs.com/package/generator-ui-component).
-
 **Heads up!** To publish, you must have a user on the npm registry. If you don't have one, create it with `npm adduser`. If you created one on the site, use `npm login` to store the credentials on the client. You can use `npm config ls` to ensure that the credentials are stored on your client. Check that it has been added to the registry by going to [http://npmjs.com/~](http://npmjs.com/~).
 
 ## Semantic versioning
@@ -77,8 +75,6 @@ Given a version number `MAJOR.MINOR.PATCH`, increment the:
 1. `MAJOR` version when you make incompatible API changes,
 2. `MINOR` version when you add functionality in a backwards-compatible manner, and
 3. `PATCH` version when you make backwards-compatible bug fixes.
-
-Additional labels for pre-release and build metadata are available as extensions to the `MAJOR.MINOR.PATCH` format.
 
 See the [Semantic Versioning](http://semver.org/) specification for more information.
 

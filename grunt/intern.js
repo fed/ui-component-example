@@ -5,7 +5,7 @@ module.exports = function () {
         runType: 'client',
         config: 'tests/intern',
         reporters: ['Console'],
-        suites: ['tests/app']
+        suites: ['tests/unit']
       }
     }
   };

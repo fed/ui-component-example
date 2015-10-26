@@ -1,15 +1,15 @@
 define([
   'intern!object',
   'intern/chai!assert',
-  'component'
+  'agent'
 ], function (registerSuite, assert, Agent) {
   registerSuite({
-    'name': 'App',
+    'name': 'Component',
     'Agent': {
       'constructor': {
         name: 'constructor',
-        'returns an object': function () {
-          assert.typeOf(Agent, 'object');
+        'returns a function': function () {
+          assert.typeOf(Agent, 'function');
         }
       }
     }

@@ -1,0 +1,27 @@
+@import "compass/css3";
+
+$color-link: #056cc1;
+$color-white: #fff;
+$font-size: 24px;
+
+.ui-component {
+  margin: 30px;
+
+  .clickable {
+    @include border-radius(3px);
+
+    background-color: $color-link;
+    color: $color-white;
+    font-size: $font-size;
+    text-align: center;
+    border: 1px solid darken($color-link, 10%);
+    padding: 20px 30px;
+    width: 100%;
+    max-width: 320px;
+
+    &:hover {
+      background-color: lighten($color-link, 5%);
+      cursor: pointer;
+    }
+  }
+}

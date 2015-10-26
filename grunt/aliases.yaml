@@ -1,0 +1,15 @@
+default:
+  - 'build'
+  - 'connect:server'
+  - 'watch'
+build:
+  - 'jshint'
+  - 'jsonlint'
+  - 'compass'
+  - 'csslint'
+  - 'hogan'
+test:
+  - 'build'
+  - 'intern'
+start:
+  - 'connect:keepalive'

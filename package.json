@@ -1,15 +1,15 @@
 {
-  "name": "tabber",
+  "name": "ui-component-example",
   "version": "0.0.0",
-  "description": "Tabber ui-component",
+  "description": "Random Color Button ui-component",
   "license": "MIT",
   "author": {
-    "name": "Federico Knussel",
+    "name": "Federico Knüssel",
     "email": "fknussel@gmail.com"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/fknussel/g.git"
+    "url": "https://github.com/fknussel/ui-component-example.git"
   },
   "scripts": {
     "test": "./node_modules/grunt-cli/bin/grunt test",

@@ -4,7 +4,8 @@ module.exports = function () {
 			options: {
 				hostname: '*',
 				port: process.env.PORT || '4567',
-				base: '.'
+				base: ['.', 'page'],
+        open: true
 			}
 		},
 		keepalive: {

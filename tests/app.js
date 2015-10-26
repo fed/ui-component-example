@@ -1,7 +1,7 @@
 define([
   'intern!object',
   'intern/chai!assert',
-  'ui-component'
+  'component'
 ], function (registerSuite, assert, Agent) {
   registerSuite({
     'name': 'App',

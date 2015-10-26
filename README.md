@@ -1,61 +1,47 @@
-# generator-ui-component
+# ui-component-example
 
-A Yeoman generator for scaffolding simple, standalone ui-components.
+Created with [generator-ui-component v0.1.0](https://github.com/fknussel/generator-ui-component).
 
-## Built-in packages
+## Prerequisites
 
-* [Sass](http://sass-lang.com/): CSS Preprocessor
-* [Compass](http://compass-style.org/): Less mixin library
-* [RequireJS](http://requirejs.org/): Asynchronous JavaScript file and module loader
-* [jQuery](https://jquery.com/): Feature-rich JavaScript library
-* [Lodash](https://lodash.com/): A JavaScript utility library
-* [Hogan.js](http://twitter.github.io/hogan.js/): Templating engine
-* [The Intern](https://theintern.github.io/): Testing framework
-* [Grunt](http://gruntjs.com/): Task runner
+1. Setup npm properly for your development environment.
+2. Run `npm install -g grunt-cli` to to install Grunt's command line interface (CLI) globally.
 
-## Creating a new ui-component
-
-1. Setup [npm](https://nodejs.org/) properly for your development environment.
-
-2. Install [Yeoman](http://yeoman.io/) and its required libraries:
+## Setup
 
 ```
-npm install -g yo grunt-cli
+npm install
 ```
 
-3. Install the [ui-component](https://github.com/fknussel/generator-ui) generator:
+## Run Tests
 
 ```
-npm install -g generator-ui-component
+grunt test
 ```
 
-4. Create a new directory and initialize a Git repo on it for your new ui-component:
+or
 
 ```
-mkdir your-project
-cd your-project
-git init
-git remote add origin https://github.com/some-user/some-project.git
+npm test
 ```
 
-7. Run the generator:
+## Build and Run
 
 ```
-yo ui-component
+grunt
 ```
 
-8. Answer the questions.
+Open browser to [http://localhost:4567](http://localhost:4567/).
 
-9. **STRONGLY RECOMMENDED:** commit the generated code to your git repository before making any modifications. This will make it much easier to see a diff of the work you have done vs. the generator output.
+## Creating your module
 
-```
-git add --all
-git commit -m "Initial commit"
-```
+1. Edit mustache, SASS, JS files in `./src` (e.g. `./src/<%= componentName %>.mustache`, `./src/<%= componentName %>.scss`, and `./src/<%= componentName %>.js`).
+2. Add mock JSON data model to `./model/viewmodel.json`.
+4. Build and run the app, and visit [http://localhost:6789](http://localhost:6789) in your browser.
 
-## Start writing your code
+## Module documentation
 
-See the `README.md` file in your newly created ui-component for more information.
+As you are developing a reusable module, be sure to include any pertinent documentation or information about what you are building. Also, if a module has multiple variations, or states, make sure those are included. Add as many variations to the mock JavaScript data model as are necessary to document your module.
 
 ## Release versions
 
@@ -80,11 +66,11 @@ Publish the package to [npm's public registry](https://www.npmjs.com/):
 npm publish
 ```
 
-To make sure everything worked just fine, go to [http://npmjs.com/package/generator-ui](http://npmjs.com/package/generator-ui).
+To make sure everything worked just fine, go to [http://npmjs.com/package/generator-ui-component](http://npmjs.com/package/generator-ui-component).
 
 **Heads up!** To publish, you must have a user on the npm registry. If you don't have one, create it with `npm adduser`. If you created one on the site, use `npm login` to store the credentials on the client. You can use `npm config ls` to ensure that the credentials are stored on your client. Check that it has been added to the registry by going to [http://npmjs.com/~](http://npmjs.com/~).
 
-## Semantic Versioning
+## Semantic versioning
 
 Given a version number `MAJOR.MINOR.PATCH`, increment the:
 
@@ -96,6 +82,6 @@ Additional labels for pre-release and build metadata are available as extensions
 
 See the [Semantic Versioning](http://semver.org/) specification for more information.
 
-## Release History
+## Release history
 
 See the [CHANGELOG](CHANGELOG.md).

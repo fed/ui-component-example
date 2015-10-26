@@ -2,22 +2,18 @@
 
 $color-link: #056cc1;
 $color-white: #fff;
-$font-size: 24px;
+$font-size: 16px;
+$offset-horizontal: 20px;
+$offset-vertical: 10px;
+$border-radius: 3px;
 
 .ui-component {
-  margin: 30px;
-
-  .clickable {
-    @include border-radius(3px);
-
+  button {
+    @include border-radius($border-radius);
     background-color: $color-link;
     color: $color-white;
     font-size: $font-size;
-    text-align: center;
-    border: 1px solid darken($color-link, 10%);
-    padding: 20px 30px;
-    width: 100%;
-    max-width: 320px;
+    padding: $offset-vertical $offset-horizontal;
 
     &:hover {
       background-color: lighten($color-link, 5%);

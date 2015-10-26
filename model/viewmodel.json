@@ -1,5 +1,25 @@
 {
-  "default": {
-    "name": "Fede"
-  }
+  "useCases": [
+    {
+      "title": "#1: Default",
+      "description": "Here we have a short name",
+      "data": {
+        "name": "Ted"
+      }
+    },
+    {
+      "title": "#2: Edge case",
+      "description": "Here we have a longer name that won't fit into the box",
+      "data": {
+        "name": "Sheldon Lee Cooper, Ph.D., Sc.D."
+      }
+    },
+    {
+      "title": "#3: Some other weird case",
+      "description": "Here we have a name which has HTML on it",
+      "data": {
+        "name": "Homer <strong><em>Simpson</em></strong>"
+      }
+    }
+  ]
 }

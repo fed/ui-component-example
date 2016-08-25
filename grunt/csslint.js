@@ -6,7 +6,7 @@ module.exports = function () {
 		all: {
 			src: [
 				'src/*.css',
-        'page/*.css'
+        'preview/*.css'
 			]
 		}
 	};

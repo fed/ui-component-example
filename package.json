@@ -12,15 +12,15 @@
     "url": "https://github.com/fknussel/ui-component-example.git"
   },
   "scripts": {
-    "test": "./node_modules/grunt-cli/bin/grunt test",
-    "start": "./node_modules/grunt-cli/bin/grunt start"
+    "start": "./node_modules/grunt-cli/bin/grunt",
+    "build": "./node_modules/grunt-cli/bin/grunt build",
+    "test": "./node_modules/grunt-cli/bin/grunt test"
   },
-  "dependencies": {},
   "devDependencies": {
     "grunt": "^0.4.5",
     "grunt-bump": "^0.3.0",
+    "grunt-casperjs": "^2.1.0",
     "grunt-cli": "^0.1.13",
-    "grunt-contrib-compass": "^1.0.4",
     "grunt-contrib-connect": "^0.9.0",
     "grunt-contrib-csslint": "^0.4.0",
     "grunt-contrib-jshint": "^0.11.0",
@@ -29,9 +29,10 @@
     "grunt-git-committers": "^0.1.2",
     "grunt-hogan": "^0.3.0",
     "grunt-jsonlint": "^1.0.4",
+    "grunt-phantom": "^0.2.1",
+    "grunt-sass": "^1.2.1",
     "grunt-templated-changelog": "^0.1.3",
     "hogan.js": "^3.0.2",
-    "intern": "^3.0.6",
     "jquery": "^1.11.1",
     "load-grunt-config": "^0.16.0",
     "lodash": "^3.5.0",

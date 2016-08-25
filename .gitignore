@@ -1,5 +1,7 @@
 node_modules/
-.idea/
 .sass-cache/
-*.log
-.DS_Store
+npm-debug.log
+
+preview/template.js
+src/component.css
+src/component.css.map

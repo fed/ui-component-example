@@ -2,9 +2,10 @@ module.exports = function () {
 	return {
 		files: [
 			'model/*.json',
-			'src/{,**/}*.{mustache,css,sass,scss,js}',
+			'src/{,**/}*.{mustache,css,sass,scss,js,json}',
 			'test/{,**/}*.js',
-			'page/{,**/}*.{html,css,js}'
+			'preview/{,**/}*.{html,css,js}',
+			'!preview/template.js'
 		],
 		options: {
 			livereload: true

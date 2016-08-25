@@ -1,5 +1,3 @@
-@import "compass/css3";
-
 $color-link: #056cc1;
 $color-white: #fff;
 $font-size: 16px;
@@ -9,8 +7,8 @@ $border-radius: 3px;
 
 .ui-component {
   button {
-    @include border-radius($border-radius);
     background-color: $color-link;
+    border-radius: $border-radius;
     color: $color-white;
     font-size: $font-size;
     padding: $offset-vertical $offset-horizontal;

@@ -5,7 +5,7 @@ module.exports = function () {
 			'grunt/{,**/}*.js',
 			'test/{,**/}*.js',
 			'src/{,**/}*.js',
-      'page/{,**/}*.js'
+      'preview/{,**/}*.js'
 		],
 		options: {
 			jshintrc: 'grunt/conf/jshintrc.json'

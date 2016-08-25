@@ -6,7 +6,7 @@ module.exports = function(grunt) {
 		},
 		init: true,
 		loadGruntTasks: {
-			pattern: ['grunt-!(cli)*', 'intern']
+			pattern: ['grunt-!(cli)*']
 		}
 	};
 	grunt.loadTasks('grunt/tasks');

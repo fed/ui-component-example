@@ -5,11 +5,11 @@ default:
 build:
   - 'jshint'
   - 'jsonlint'
-  - 'compass'
+  - 'sass'
   - 'csslint'
   - 'hogan'
 test:
   - 'build'
-  - 'intern'
-start:
-  - 'connect:keepalive'
+  - 'connect:server'
+  - 'phantom'
+  - 'casperjs'

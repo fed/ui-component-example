@@ -7,7 +7,7 @@ This is a simple ui-component consisting just of a button that changes its backg
 ## Prerequisites
 
 1. Setup [npm](https://nodejs.org/) properly for your development environment.
-2. Run `npm install -g grunt-cli` to to install Grunt's command line interface (CLI) globally.
+2. Run `npm install -g grunt-cli` to to install Grunt's command line interface (CLI) globally (you might as well use `npm start`, `npm build` and `npm test` if you don't want to install `grunt-cli` globally since it comes shipped as a dev dependency).
 
 ## Setup
 
@@ -36,12 +36,8 @@ grunt
 ## Creating your module
 
 1. Edit mustache, SASS, JS files in `./src` (e.g. `./src/component.mustache`, `./src/component.scss`, and `./src/component.js`).
-2. Add mock JSON data model to `./model/viewmodel.json`.
+2. Add mock JSON data model to `./model/usecases.json`.
 4. Build and run the app, and visit [http://localhost:4567](http://localhost:4567) in your browser.
-
-## Module documentation
-
-As you are developing a reusable module, be sure to include any pertinent documentation or information about what you are building. Also, if a module has multiple variations, or states, make sure those are included. Add as many variations to the mock JavaScript data model as are necessary to document your module.
 
 ## Release versions
 

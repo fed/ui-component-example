@@ -1,4 +1,4 @@
-define('agent', ['jquery', 'lodash'], function ($, _) {
+define('component', ['jquery', 'lodash'], function ($, _) {
   var DEFAULTS = {
     colors: [
       '#F44336', '#E91E63', '#9C27B0', '#673AB7', '#3F51B5',
@@ -8,22 +8,20 @@ define('agent', ['jquery', 'lodash'], function ($, _) {
     ]
   };
 
-  var Agent = function ($element, options) {
+  var Component = function ($element, options) {
     this.options = $.extend({}, DEFAULTS, options);
     this.$element = $element;
     this.$element.on('click', $.proxy(this.changeColor, this));
-
   };
 
-  Agent.prototype = {
+  Component.prototype = {
     changeColor: function () {
       this.$element.css('background-color', this.getRandomColor());
     },
-
     getRandomColor: function () {
       return this.options.colors[Math.floor(Math.random() * this.options.colors.length)];
     }
   };
 
-  return Agent;
+  return Component;
 });
